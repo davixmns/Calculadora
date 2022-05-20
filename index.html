@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator404</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <form name="form"><input name="txt" type="text" id="resultado" disabled value=""></form>
+        </form>
+        <table>
+            <!--First Line-->
+            <tr>
+                <td><input type="button" class="operation" value="C" onclick="teste.play(), deleteC()">
+                </td>
+                <td><input type="button" class="button" value="/" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="*" onclick="teste.play()"></td>
+                <td><input type="button" class="operation" onclick="teste.play(), deletee()" value=">"></td>
+            </tr>
+            <!--Second Line-->
+            <tr>
+                <td><input type="button" class="button" value="7" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="8" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="9" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="-" onclick="teste.play()"></td>
+            </tr>
+            <!--Third Line-->
+            <tr>
+                <td><input type="button" class="button" value="4" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="5" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="6" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="+" onclick="teste.play()"></td>
+            </tr>
+            <!--Fourth Line-->
+            <tr>
+                <td><input type="button" class="button" value="1" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="2" onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="3" onclick="teste.play()"></td>
+                <td rowspan="2"><input type="button" class="operation" onclick="teste.play(), conta()" value="="
+                        id="Bigual" style="height:136px;"></td>
+            </tr>
+            <!--Fifth Line-->
+            <tr>
+                <td colspan="2"><input type="button" class="button" value="0" id="Bzero" style="width:136px;"
+                        onclick="teste.play()"></td>
+                <td><input type="button" class="button" value="." id="Bponto" onclick="teste.play()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src='script.js'> </script>
+
+</body>
+
+</html>
